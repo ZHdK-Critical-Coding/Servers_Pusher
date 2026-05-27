@@ -1,0 +1,15 @@
+{
+  "name": "pusher-server",
+  "version": "1.0.0",
+  "description": "Tiny Node server that triggers Pusher events for the p5 client.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pusher": "^5.2.0"
+  }
+}
