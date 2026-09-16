@@ -5,7 +5,7 @@ message to a Pusher channel. The browser can't trigger Pusher events itself
 (that needs the app secret), so the flow is:
 
 ```
-p5 sketch (Client/)  --POST /message-->  Node server (Server/)  --trigger-->  Pusher channel "chat"
+p5 sketch (P5_Input_Pusher/Client)  --POST /message-->  this Node server  --trigger-->  Pusher channel "chat"
 ```
 
 ## 1. Get Pusher keys
@@ -16,7 +16,6 @@ Create a free app at https://pusher.com (Channels). Copy its keys from
 ## 2. Run the server
 
 ```bash
-cd Server
 npm install
 cp .env.example .env      # then paste your real keys into .env
 npm start                 # -> http://localhost:3000
@@ -24,7 +23,8 @@ npm start                 # -> http://localhost:3000
 
 ## 3. Open the sketch
 
-Open `Client/index.html` in a browser (e.g. with VS Code's "Live Server", or
+Open `Client/index.html` from the
+[P5_Input_Pusher](https://github.com/ZHdK-Critical-Coding/P5_Input_Pusher) repo in a browser (e.g. with VS Code's "Live Server", or
 the p5 web editor). Type a message, click **Send**.
 
 ## 4. See it arrive
