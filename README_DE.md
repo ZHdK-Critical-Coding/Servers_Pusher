@@ -24,19 +24,25 @@ https://pusher.com.
    ```bash
    npm install
    cp .env.example .env      # App-ID, Key, Secret und Cluster in .env eintragen
-   npm start                 # -> http://localhost:3000
    ```
-3. `Client/index.html` aus
-   [P5_Input_Pusher](https://github.com/ZHdK-Critical-Coding/P5_Input_Pusher)
-   mit Live Server öffnen, eine Nachricht eingeben und auf **Send** klicken.
-4. In der **Debug Console** der App auf pusher.com nachschauen: Jedes Send
-   erscheint als `new-message`-Event auf dem Kanal `chat`.
 
 Einstellungen in `.env`: `PUSHER_APP_ID`, `PUSHER_KEY`, `PUSHER_SECRET`,
 `PUSHER_CLUSTER` (Standard `eu`) und `PORT` (Standard 3000). `.env` steht in
 `.gitignore` – nie committen.
 
 Pakete (npm): express 4, cors 2, dotenv 16, pusher 5.
+
+## Ausführen
+
+1. Den Server starten:
+   ```bash
+   npm start                 # -> http://localhost:3000
+   ```
+2. `Client/index.html` aus
+   [P5_Input_Pusher](https://github.com/ZHdK-Critical-Coding/P5_Input_Pusher)
+   mit Live Server öffnen, eine Nachricht eingeben und auf **Send** klicken.
+3. In der **Debug Console** der App auf pusher.com nachschauen: Jedes Send
+   erscheint als `new-message`-Event auf dem Kanal `chat`.
 
 ## Coding-Hilfe
 
